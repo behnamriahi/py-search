@@ -4,6 +4,7 @@ search_query = input("Enter the search query:")
 search_query = search_query.replace(' ', '+') #structuring our search query for search url.
 executable_path = "/path/to/geckodriver"
 
+#tor proxy sample
 profile = webdriver.FirefoxProfile()
 profile.set_preference('network.proxy.type', 1)
 profile.set_preference('network.proxy.socks', '127.0.0.1')
